@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cloudy's Contact Info</title>
+    <link rel="Stylesheet" href="lab07styles.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="skills.html">Skills</a> |
+        <a href="contact.html">Contact</a>
+    </nav>
+    <h1 id="top">Contact</h1>
+    <p>
+        Shengyun Zhou<br>
+        Hinds Hall<br>
+        Syracuse, NY 13244<br>
+        <a href="mailto:szhou22@syr.edu">shengyun Email</a><br><br>
+        <img src="../lab03/LinkedIn-Logos/logo_sized.png" alt="Shengyun LinkedIn Profile">
+        <a href="http://www.linkedin.com/in/zhousy">My LinkedIn Profile</a><br><br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.1523517912638!2d-76.13594292383361!3d43.03822589198806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f39fca0f3225%3A0xb7e0bcbf2e1292f6!2sHinds%20Hall%2C%20343%20Hinds%20Hall%2C%20Syracuse%2C%20NY%2013210!5e0!3m2!1sen!2sus!4v1706801650826!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </p>
+    <h2>Forms</h2>
+    <!-- all for elements inside form tag -->
+    <form action="https://formspree.io/f/mvoekywy" method="post">
+        <!-- input type is for short text a.	A text field -->
+        <label for="fullname">Name:</label><br>
+        <input type="text" id ="fullname" name="fullname"><br>
+        <p>Gender:</p>
+        <!-- b.	a radio button, checkbox or select -->
+        <!-- ids must be unique for each button-->
+        <input type="radio" id="Male" name="gender" value="boy">
+        <label for="Male">Male</label>
+        <input type="radio" id="Female" name="gender" value="girl">
+        <label for="Female">Female</label>
+        <input type="radio" id="noanswer" name="gender" value="Do Not Want To Answer">
+        <label for="noanswer">Do Not Want To Answer</label><br><br>
+        <label for="grade">What Year Are You?</label><br><br>
+        <!-- all values must be in an option for selects -->
+        <select name="grade" id="grade">
+            <option value="freshmen">Freshmen</option>
+            <option value="sophmore">Sophmore</option>
+            <option value="junior">Junior</option>
+            <option value="seinor">Seinor</option>
+        </select><br><br>
+        <!-- c.	a textarea -->
+        <label for="anythingelse">Anything Else You Want To Know About Me:</label><br>
+        <textarea name="anythingelse" id="anythingelse" cols="60" rows="3"></textarea><br><br>
+        <!-- button text is in the value for a submit -->
+        <input type="submit" value="Send Form">
+    </form>
+</body>
+</html>
