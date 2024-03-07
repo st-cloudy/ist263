@@ -1,0 +1,41 @@
+body {font-family: 'Times New Roman', Times, serif; background-color: #ffe6e6;}
+
+h1, h2 {color: #FAA300;}
+
+h1 {font-size: 2em;}
+h2 {font-size: 1.5em;}
+
+p {color: #070F2B;}
+
+td, th {border: 1px solid black; color: #070F2B;}
+
+.evenrow {background-color: #d3d3d3;}
+
+a {color: #EE4266;}
+a:hover {color: #927e0d;}
+
+nav a {color: #0d3e92;}
+nav a:hover {background-color: #f0f8ff;}
+
+nav {background-color: #FFCAD4;}
+
+nav {padding: 10px; margin-bottom: 30px;}
+
+/* a.	Body background color: #FFE6E6
+b.	Text color: #070F2B
+c.	Link color: #EE4266
+d.	Heading color: #FAA300
+e.	Site Navigation Background: #FFCAD4
+f.	Site Navigation Highlight Color: #7F27FF
+g.	Site Navigation Link Color: #0D9276 */
+
+.motto {float: right;}
+
+.row1 {display: flex; background-color: white; border-radius: 1em; padding: 20px; margin: 20px;}
+.r1c1 {flex: 1;}
+.r1c2 {flex: 3;}
+
+.row2 {display: flex; background-color: white; border-radius: 1em; padding: 20px; margin: 20px;}
+.r2c1 {flex: 1; padding: 40px;}
+.r2c2 {flex: 3; padding: 40px;}
+
