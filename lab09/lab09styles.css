@@ -1,8 +1,9 @@
-body {font-family: 'Times New Roman', Times, serif; background-color: #ffe6e6;}
+body {font-family: 'Times New Roman', Times, serif; background-color: #ffe6e6;
+padding: 30px;}
 
 h1, h2 {color: #FAA300;}
 
-h1 {font-size: 2em;}
+h1 {font-size: 3em; padding: 50px;}
 h2 {font-size: 1.5em;}
 
 p {color: #070F2B;}
@@ -19,7 +20,7 @@ nav a:hover {background-color: #f0f8ff;}
 
 nav {background-color: #FFCAD4;}
 
-nav {padding: 10px; margin-bottom: 30px;}
+nav {padding: 10px; margin-bottom: 30px; margin: -30px;}
 
 /* a.	Body background color: #FFE6E6
 b.	Text color: #070F2B
@@ -39,3 +40,14 @@ g.	Site Navigation Link Color: #0D9276 */
 .r2c1 {flex: 1; padding: 40px;}
 .r2c2 {flex: 3; padding: 40px;}
 
+.mainhead {text-align: center;}
+
+.intro {padding: -10px; max-width: 80%}
+.iconskills {display: flex;
+justify-content: space-around;
+padding: 50px;}
+.os {background-color: #6969e9; border-radius: 1em;
+padding: 10px;}
+.flex {display: flex; padding: 20px;}
+.iconskills {flex: 5;}
+.osd {flex: 1;}
