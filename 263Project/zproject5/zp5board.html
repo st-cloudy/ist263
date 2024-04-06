@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>zp5_Board</title>
+        <link rel="Stylesheet" href="zp5styles.css">
+        <style>
+            main {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+                padding: 20px;
+            }
+
+            .profile {
+                border: 1px solid #ddd;
+                text-align: center;
+                padding: 20px;
+            }
+
+            .portrait {
+                width: 100%; /* Adjust as necessary */
+                height: auto;
+                border-radius: 50%; /* Gives a circular shape */
+                margin-bottom: 10px;
+            }
+
+            .description {
+                margin-bottom: 10px;
+            }
+
+            @media (max-width: 768px) {
+                main {
+                    grid-template-columns: 1fr; /* Stack the profiles in one column on small screens */
+                }
+            }
+            .db {
+                display: flex;
+                height: 100%; /* Adjust the height as needed */
+            }
+
+            .department, .board-member {
+                flex: 1;
+                padding: 20px;
+            }
+
+            .vertical-line {
+                width: 1px;
+                background-color: #000;
+                margin: 0 20px;
+            }
+
+            .department-box, .member-box {
+                border: 1px solid #ddd;
+                padding: 15px;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            .member-photo {
+                border-radius: 50%; /* Circular photo */
+                width: 150px; /* Adjust as necessary */
+                height: 150px; /* Adjust as necessary */
+                object-fit: cover;
+                margin-bottom: 10px;
+            }
+
+            .member-info {
+                border: 1px solid #ddd;
+                padding: 10px;
+            }
+
+            /* Responsive adjustments */
+            @media (max-width: 768px) {
+                .container {
+                    flex-direction: column;
+                    height: auto;
+                }
+                .vertical-line {
+                    width: 100%;
+                    height: 1px;
+                    margin: 20px 0;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <a href="zp5home.html">Home</a> <span class="pipe">|</span>
+            <a href="zp5board.html">Board</a> <span class="pipe">|</span>
+            <a href="zp5event.html">Events</a>
+        </nav>
+        <header>
+            <h1>Presidium</h1> <!-- biggest main heading -->
+        </header>
+        <main>
+            <section class="profile">
+                <h2>President</h2>
+                <img src="../ProjectImages/president.jpg" alt="President Photo" class="portrait">
+                <p class="description"><strong>Taige Han</strong><br><br>
+                    Founder & Chairman of the Eastern Association of USOSU, currently serves as the Executive Chairman of the United States Overseas Student Union. He is a master’s student in International Relations at the University of Chicago; he graduated from Syracuse University's Maxwell School of Citizenship and Public Affairs with a double major in International Relations and Political Science. He has served as the Deputy Chairman and Minister of Academics for the China Development Student Think Tank Syracuse branch and as captain and one of the founders of the Syracuse Chinese Scholar Soccer Club. Tiger is the general manager of the Sino-American Symposium on Academic, Economic, and Cultural and has worked as a research assistant at the Chongyang Institute for Financial Studies at Renmin University of China and the Hainan Institute for World Watch. He has conducted research and investigations in Bijie City with the Guizhou Provincial Overseas Chinese Federation and special overseas Chinese representatives on overseas Chinese and rural revitalization, overseas Chinese international cultural exchange bases, and Overseas Chinese Federation organization construction. Tiger has interned in the project department of the Guizhou Provincial Charity Federation, participating in organizing several poverty alleviation and charitable public welfare projects.</p>
+            </section>
+    
+            <section class="profile">
+                <h2>Vice-President</h2>
+                <img src="../ProjectImages/vp.jpg" alt="Vice-President Photo" class="portrait">
+                <p class="description"><strong>Shitong Li</strong><br><br>
+                    Vice President of the Eastern Association of USOSU, is a senior majoring in Applied Mathematics at Syracuse University. He is the deputy manager of the 2023 Sino-American Academic and Economic Cultural Exchange Summit and the volunteer leader for the Deyushe New York performance. He enjoys playing football, cars, and skiing.</p>
+            </section>
+        </main>
+        <div class="db">
+            <div class="department">
+                <h2>Department</h2>
+                <div class="department-box">
+                    <h3>Department of Event Management</h3>
+                    <p>
+                    Event Planning: We encourage creativity and fresh ideas for activities to ensure the student community's activities are vibrant and interesting. From cultural festivals to summits, social events to celebrity meet-and-greets, you will be involved in planning and organizing various events to resonate widely.
+                    Event Execution: Once planning is complete, you will be responsible for seamless execution and progression of events, ensuring every detail meets expectations and brings enjoyment to the student community.
+                    Event Tracking: Maintain close communication with all departments, follow up on event progress, and optimize the schedule to ensure everything proceeds smoothly.
+                    Personnel Requirements：
+                    We welcome students from diverse backgrounds, as diversity is our strength. However, we also require:
+                    Teamwork: Collaborate within a diverse team to achieve great goals. Here, every voice is valued, and every idea has the chance to become reality.
+                    Communication Skills: Excellent communication skills are key to collaboration. As a member of the Activities Department, you will need to interact with people from different groups to ensure tasks proceed smoothly and events are flawless.
+                    Leadership: Ability to lead team members, coordinate task distribution and workflow, and lead us forward together.
+                    Problem-Solving Skills: Facing challenges, we expect you to propose innovative solutions and continuously improve the planning and execution processes of events, taking each event to a higher level.
+                    </p>
+                </div>
+                <div class="department-box">
+                    <h3>Department of Technology</h3>
+                    <p>
+                    The Technical Department is responsible for managing and supporting tasks related to technology and IT.
+                    Provides internal technical support, solves technical problems; develops technical strategies to assist the alliance's growth needs; offers training and development plans to ensure members have the necessary technical skills and knowledge.
+                    Recruits, manages, and leads the technical team to ensure high performance and collaboration.
+                    Specific tasks include but are not limited to building various websites; debugging and maintaining technical equipment; filming and post-editing for events.
+                    </p>
+                </div>
+                <div class="department-box">
+                    <h3>Department of Media</h3>
+                    <p>
+                        The Media Department, serving as the main force for external publicity and internal information dissemination, cooperates actively with all departments to accurately and timely convey the latest news and exciting activities of the association to every student and cooperating organization. Here, interesting and fulfilling work is filled with new challenges and opportunities! In the Media Department, we provide a creative and energetic platform where you can learn cutting-edge media knowledge and skills! We are not only messengers of information but also guardians of dreams!<br><br>
+Job Responsibilities：
+<ul>
+<li>Use tools like ShowMe and Canva for layout design of WeChat posts.</li>
+<li>Design and produce posters, invitations, logos, and other promotional materials.</li>
+<li>Write and edit press releases, event reports, etc.</li>
+<li>Update and maintain social media platforms like Little Red Book, TikTok, Instagram, etc.</li>
+<li>Photography and video recording at event sites.</li>
+</ul>
+Personnel Requirements：
+<ul>
+<li>Good teamwork and communication skills.</li>
+<li>High execution ability and responsibility.</li>
+<li>Strong interest or experience in learning media skills (e.g., photography, editing, posting, poster design).</li>
+<li>Prior experience in operating social media and WeChat public accounts is preferred.</li>
+</ul>
+                    </p>
+                </div>
+                <div class="department-box">
+                    <h3>Department of Public Relationship</h3>
+                    <p>
+                        Internal Relations: Coordinate with the headquarters' external relations department, while maintaining close contact with other departments of the Eastern Association to ensure information sharing transparency. Additionally, responsible for collecting feedback and suggestions related to internal cooperation to continuously improve collaboration processes and plan internal events to bring entertainment and vitality to the team.<br>
+                        External Relations: Establish and cooperate with partnering student unions and sponsors, confirm long-term partnership relationships, and promote cooperation among student unions. In the process of maintaining cooperation relationships, actively organize entertainment activities to enhance the team cohesion of the External Relations Department, reflecting an entertaining work atmosphere. Also responsible for finding new potential sponsors and cooperation partners to expand the cooperation network of the student union.
+                    </p>
+                </div>
+                <div class="department-box">
+                    <h3>Department of Human Resources</h3>
+                    <p>
+                        The mission of the Human Resources Department is to recruit, train, and manage outstanding talents for the alliance. We continuously infuse fresh blood into the alliance through carefully designed recruitment processes. While assisting members to smoothly integrate into the alliance, we also uncover students' deeper interests and potential, becoming the one to spot the "steed" among the horses. <br><br>
+                        Core work of the Human Resources Department includes:
+Talent Recruitment:
+<ul><li>We will regularly receive resumes and basic information from applicants, and based on the needs and core values of the alliance, filter the suitable candidates and arrange interviews.</li>
+<li>Members of the Human Resources Department will be fully involved in the interview process, helping departments find members that are suitable for them.</li>
+</ul>
+Organization Management:
+<ul>
+    <li>Design the overall framework of the alliance, and establish ways of cooperation between departments. Help alliance members with integration and capacity building, focusing on the sustainable development of the alliance.</li>
+</ul>
+Talent Operation:
+<ul>
+    <li>Help alliance members develop "inward" qualities, including improvement in capabilities, cognition, and psychological aspects.</li>
+<li>Help alliance members enhance "outward" qualities, including networking, teamwork, and building social influence.</li>
+</ul>
+                    </p>
+                </div>
+                <div class="department-box">
+                    <h3>Finance Department</h3>
+                    <p>
+                        Responsible for cooperating with relevant departments or teams to establish the theme of each event; coordinate the resources needed for activities, such as venues, personnel, equipment, etc., to ensure the smooth progress of activities. Write timely and attractive posts based on the latest news, results, or related news of the association. Through communication and coordination with other departments or organizations, develop and oversee the financial budget, plan, and objectives of the association.
+                    </p>
+                </div>
+                <div class="department-box">
+                    <h3>Secretariat Department</h3>
+                    <p>
+                        Assist the chairman, vice-chairman, and department leaders in handling related matters, send reports to department leaders promptly after notifications from the chairman and vice-chairman, and be responsible for contacting relevant departments to complete tasks. Clearly understand the needs of each department, sponsors, and any related organization during events, and summarize to report to the chairman and vice-chairman. Update meeting records and pre-event research records timely.
+                    </p>
+                </div>
+                <div class="department-box">
+                    <h3>Department of Event Planning</h3>
+                    <p>
+                        Invite guests from different fields to produce radio programs: every two weeks, the radio program will invite different people to share views and stories.
+Provide more ideas and thoughts for other departments.
+Expand new projects and try more possibilities.
+                    </p>
+                </div>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="board-member">
+                <h2>Board Member</h2>
+                <div class="member-box">
+                    <img src="../ProjectImages/h_evenman.jpg" alt="Member Photo" class="member-photo">
+                    <div class="member-info">
+                        <p>
+                            <strong>Edith Wang</strong><br>
+                            Activities Department Director of the Eastern Association, is a sophomore at Vanderbilt University, majoring in Economics and Human and Organizational Development. She is the leader of the guest group of the Sino-American Symposium on Academic, Economic, and Cultural and enjoys traveling, adventuring, outdoor sports, weightlifting, and mystery movies. She has a family of three, including a dog.
+                        </p>
+                    </div>
+                </div>
+                <div class="member-box">
+                    <img src="../ProjectImages/ink.jpg" alt="Member Photo" class="member-photo">
+                    <div class="member-info">
+                        <p>
+                            <strong>Ink Gu</strong><br>
+                            Technical Department Director of the Eastern Association and former Technical Department Director of the USOSU, is a sophomore (Class of '26) at Boston University, majoring in Computer Engineering. He is responsible for building and maintaining the alliance's official website and has been part of the team building websites for two NFT competitions.
+                        </p>
+                    </div>
+                </div>
+                <div class="member-box">
+                    <img src="../ProjectImages/h_media.jpg" alt="Member Photo" class="member-photo">
+                    <div class="member-info">
+                        <p>
+                            <strong>Jeanette Shen</strong><br>
+Media Department Director of the Eastern Association, is pursuing a Master of Business Analytics at Columbia University. She is the leader of the publicity group for the Sino-American Symposium on Academic, Economic, and Cultural and has been responsible for WeChat article copywriting and layout, and poster production. Jeanette, who has served as the lead performer of the guzheng in a Sino-Australian cultural exchange concert at the Sydney Opera House, enjoys voice acting, speaking, and broadcasting. She looks forward to welcoming everyone to the Media Department to progress and communicate with like-minded partners.
+                        </p>
+                    </div>
+                </div>
+                <div class="member-box">
+                    <img src="../ProjectImages/h_pr.jpg" alt="Member Photo" class="member-photo">
+                    <div class="member-info">
+                        <p><Strong>Josie Zhang</Strong><br>
+                            External Relations Department Director of the Eastern Association, is a Master's student in Biostatistics at Yale University. She is the leader of the external relations group for the Sino-American Symposium on Academic, Economic, and Cultural and a member of the Yale Venture Club—Entrepreneur Relations. Josie enjoys singing, weightlifting, hiking, and all outdoor activities.
+                            </p>
+                    </div>
+                </div>
+                <div class="member-box">
+                    <img src="../ProjectImages/zsy_potrait.jpg" alt="Member Photo" class="member-photo">
+                    <div class="member-info">
+                        <p><Strong>Shengyun Zhou</Strong><br>
+                            Human Resources Department Director of the Eastern Association, is a junior in the School of Information Studies at Syracuse University, majoring in Information Technology and Management. He is the vice-captain and Media Department Director of the Syracuse University Chinese Scholar Soccer Club(SUCSSC) and the personnel secretary group leader of the 2023 Sino-American Symposium on Academic, Economic, and Cultural. Cloudy aims to spread the influence of the headquarters to all parts of the East.
+                            </p>
+                    </div>
+                </div>
+                <div class="member-box">
+                    <img src="../ProjectImages/h_fi.jpg" alt="Member Photo" class="member-photo">
+                    <div class="member-info">
+                        <p>
+                            <strong>Martin Fu</strong><br>
+Finance Department Director of the Eastern Association, graduated from Syracuse University with a degree in Applied Mathematics & Economics and is studying Data Science at Brown University
+                        </p>
+                    </div>
+                </div>
+                <div class="member-box">
+                    <img src="../ProjectImages/jiandan.jpg" alt="Member Photo" class="member-photo">
+                    <div class="member-info">
+                        <p>
+                            <strong>Jason Lang</strong><br>
+Director of the Planning Department of the Eastern Association,
+Senior in Physics at Syracuse University
+Vice captain of the Syracuse Chinese Football Team
+Leader of the planning group for the Sino-American Academic Summit
+Believes that planning is all about communication
+                        </p>
+                    </div>
+                </div>
+                <div class="member-box">
+                    <img src="../ProjectImages/h_secre.jpg" alt="Member Photo" class="member-photo">
+                    <div class="member-info">
+                        <p>
+                            <strong>Jacob Liu</strong><br>
+                            Director of the Secretariat Department of the Eastern Association,
+                            Intern at PwC Beijing in Risk Management Consulting, DRD Group
+                            Member of the guest group for the 2023 Sino-American Academic and Economic Cultural Exchange Summit
+                            Volunteer for the Deyunshe performance in New York
+                            Feels honored to join the alliance and looks forward to making more contributions in the future, hoping to meet outstanding peers in the process
+                            Enjoys sports, gaming, and traveling                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

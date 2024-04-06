@@ -1,0 +1,116 @@
+body {font-family: 'Times New Roman', Times, serif; background-color: #ffffff;
+padding: 30px;}
+
+h1, h2 {color: #FAA300;
+    text-align: center;}
+
+header {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-align: center; /* Center text */
+}
+.homelogo {
+    margin-top: 20px; /* Adds space between the text and the logo */
+    width: 100%; /* Makes the image width responsive to its container's width */
+    max-width: 800px; /* Maximum size of the logo */
+    height: auto; /* Maintains aspect ratio */
+}
+@media (max-width: 800px) {
+    .homelogo {
+        max-width: 300px; /* Smaller max-width for mobile devices */
+        margin-top: 10px; /* Less space on smaller screens */
+    }
+}
+
+h1 {font-size: 3em; padding: 50px;}
+h2 {font-size: 1.5em;}
+
+p {color: #070F2B;}
+
+td, th {border: 1px solid black; color: #070F2B;}
+
+.evenrow {background-color: #d3d3d3;}
+
+a {color: #2e83cf;}
+a:hover {color: #927e0d;}
+
+nav a {color: #0d3e92;}
+nav a:hover {background-color: #f0f8ff;}
+
+nav {background-color: #6cc3fac7;}
+
+nav {padding: 10px; margin-bottom: 30px; margin: -30px;}
+
+/* a.	Body background color: #FFE6E6
+b.	Text color: #070F2B
+c.	Link color: #EE4266
+d.	Heading color: #FAA300
+e.	Site Navigation Background: #FFCAD4
+f.	Site Navigation Highlight Color: #7F27FF
+g.	Site Navigation Link Color: #0D9276 */
+
+.motto {float: right;}
+
+.row1 {display: flex; background-color: white; border-radius: 1em; padding: 20px; margin: 20px;}
+.r1c1 {flex: 1;}
+.r1c2 {flex: 3;}
+
+.row2 {display: flex; background-color: white; border-radius: 1em; padding: 20px; margin: 20px;}
+.r2c1 {flex: 1; padding: 40px;}
+.r2c2 {flex: 3; padding: 40px;}
+
+
+.mainhead {text-align: center;}
+
+.intro {padding: -10px; max-width: 80%}
+.iconskills {display: flex;
+justify-content: space-around;
+padding: 50px;}
+.os {background-color: #6969e9; border-radius: 1em;
+padding: 10px;}
+.flex {display: flex; padding: 20px;}
+.iconskills {flex: 5;}
+.osd {flex: 1;}
+
+
+.ipi {max-width: 100%;}
+
+.row2 {flex-wrap: wrap;}
+
+@media only screen and (max-width: 800px) {
+    nav a {display: block;}
+    .pipe {display: none;}
+}
+
+footer {background-color: #000e54;
+font-family: Arial, Helvetica, sans-serif;
+padding: 10px;}
+footer p {color: #ffffff;}
+.footerlogo {width: 350px;
+    padding-right: 20px;}
+.footer {display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line on small screens */
+    justify-content: space-around; /* Distributes space around items */
+    padding: 20px; /* Adds some padding around the footer content */
+    box-sizing: border-box; /* Ensures padding is included in the total width */}
+/* this styles all div tags inside the footer class */
+.footer div {flex: auto;}
+
+@media (max-width: 800px) {
+    .footer {
+        flex-direction: column; /* Stacks flex items vertically on small screens */
+        align-items: center; /* Centers items horizontally */
+        text-align: center; /* Centers text within each flex item */
+    }
+
+    .footer div, .footer p, .footer strong {
+        margin-bottom: 20px; /* Adds space between items for clarity */
+    }
+
+    .footer hr {
+        width: 80%; /* Adjusts the width of the horizontal rule */
+        margin-bottom: 20px; /* Adds space after the horizontal rule */
+    }
+}
