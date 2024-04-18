@@ -1,0 +1,78 @@
+body {font-family: 'Times New Roman', Times, serif; background-color: #ffe6e6;
+padding: 30px;}
+
+h1, h2 {color: #FAA300;}
+
+h1 {font-size: 3em; padding: 50px;}
+h2 {font-size: 1.5em;}
+
+p {color: #070F2B;}
+
+td, th {border: 1px solid black; color: #070F2B;}
+
+.evenrow {background-color: #d3d3d3;}
+
+a {color: #EE4266;}
+a:hover {color: #927e0d;}
+
+nav a {color: #0d3e92;}
+nav a:hover {background-color: #f0f8ff;}
+
+nav {background-color: #FFCAD4;}
+
+nav {padding: 10px; margin-bottom: 30px; margin: -30px;}
+
+/* a.	Body background color: #FFE6E6
+b.	Text color: #070F2B
+c.	Link color: #EE4266
+d.	Heading color: #FAA300
+e.	Site Navigation Background: #FFCAD4
+f.	Site Navigation Highlight Color: #7F27FF
+g.	Site Navigation Link Color: #0D9276 */
+
+.motto {float: right;}
+
+.row1 {display: flex; background-color: white; border-radius: 1em; padding: 20px; margin: 20px;}
+.r1c1 {flex: 1;}
+.r1c2 {flex: 3;}
+
+.row2 {display: flex; background-color: white; border-radius: 1em; padding: 20px; margin: 20px;}
+.r2c1 {flex: 1; padding: 40px;}
+.r2c2 {flex: 3; padding: 40px;}
+
+
+.mainhead {text-align: center;}
+
+.intro {padding: -10px; max-width: 80%}
+.iconskills {display: flex;
+justify-content: space-around;
+padding: 50px;}
+.os {background-color: #6969e9; border-radius: 1em;
+padding: 10px;}
+.flex {display: flex; padding: 20px;}
+.iconskills {flex: 5;}
+.osd {flex: 1;}
+
+
+.ipi {max-width: 100%;}
+
+.row2 {flex-wrap: wrap;}
+
+@media only screen and (max-width: 800px) {
+    nav a {display: block;}
+    .pipe {display: none;}
+}
+
+.skip {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 8px;
+    text-decoration: wavy;
+    border: 2px solid #ffa500;
+    position: absolute;
+    top: 10px;
+    left: -999px; /* push off left side of browser */
+}
+.skip:focus {
+    left: 10px;
+}
