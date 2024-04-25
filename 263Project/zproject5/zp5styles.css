@@ -91,7 +91,9 @@ padding: 10px;}
 }
 
 footer {background-color: #000e54;
-font-family: Arial, Helvetica, sans-serif;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 padding: 10px;}
 footer p {color: #ffffff;}
 .footerlogo {width: 350px;
