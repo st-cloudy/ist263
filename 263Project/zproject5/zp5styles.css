@@ -1,8 +1,14 @@
-body {font-family: 'Times New Roman', Times, serif; background-color: #ffffff;
+body {font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal; background-color: #ffffff;
 padding: 30px;}
 
+
 h1, h2 {color: #FAA300;
-    text-align: center;}
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;}
 
 header {
     display: flex;
@@ -114,3 +120,15 @@ footer p {color: #ffffff;}
         margin-bottom: 20px; /* Adds space after the horizontal rule */
     }
 }
+
+@media (max-width: 800px) { /* Adjust this value based on the breakpoint you need */
+    .oars {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .oars1, .oars2 {
+      width: 100%;
+      /* if you need to add padding or margins, you can do so here */
+    }
+  }
