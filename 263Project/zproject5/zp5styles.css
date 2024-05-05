@@ -4,7 +4,7 @@ body {font-family: "Lato", sans-serif;
 padding: 30px;}
 
 
-h1, h2 {color: #FAA300;
+h1, h2 {color: #000000;
     text-align: center;
     font-family: "Lato", sans-serif;
     font-weight: 400;
@@ -42,7 +42,7 @@ td, th {border: 1px solid black; color: #070F2B;}
 a {color: #2e83cf;}
 a:hover {color: #927e0d;}
 
-nav a {color: #0d3e92;}
+nav a {color: #2A00C2;}
 nav a:hover {background-color: #f0f8ff;}
 
 nav {background-color: #6cc3fac7;}
