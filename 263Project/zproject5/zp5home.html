@@ -14,10 +14,24 @@
         .oars1 {flex: 4;
             padding-right: 20px;}
         .oars2 {flex: 1;}
+        .skip {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 8px;
+            text-decoration: wavy;
+            border: 2px solid #ffa500;
+            position: absolute;
+            top: 10px;
+            left: -999px; /* push off left side of browser */
+        }
+        .skip:focus {
+            left: 10px;
+        }
     </style>
 </head>
 <body>
 <nav>
+    <a href="#skip" class="skip" tabindex="1">Skip to Content</a><br>
     <a href="zp5home.html">Home</a> <span class="pipe">|</span>
     <a href="zp5board.html">Board</a> <span class="pipe">|</span>
     <a href="zp5event.html">Events</a>
@@ -28,7 +42,7 @@
 </header>
 <main>
     <h2>Union Introduction</h2>      <!-- strong is inline, no margin, no new line -->
-    <p>
+    <p id="skip">
         The Eastern Association of USOSU is the first branch association of the United States Overseas Student Union in the eastern United States. The Eastern Association began its preparations in the second half of 2022 and was officially established in Boston at the end of 2023. The association aims to replicate and inherit the mission of the alliance's headquarters to serve the international student community. By addressing the concerns and solving the problems of international students in the Eastern U.S., it establishes a close and practical social communication platform with the Eastern student community. Integrating various resources from the headquarters and the East, it helps students in the Eastern U.S. overcome difficulties in daily life, studies, and employment, enabling them to better adapt to the local campus and workplace life in the U.S. The USOSU originated from the Chinese student community and various provincial associations. From the beginning, the Alliance has maintained a neutral stance between nations, firmly adhering to its mission to serve international student groups of all ethnicities, helping allies in a foreign land have an equal platform to showcase themselves more broadly! To date, we have made contact and cooperated with over 30 different organizations across the Eastern region and universities, and we are actively preparing to expand more states, regions, and international student associations. Our goal is to build a bridge of friendship and support for international students worldwide, welcoming all students to join this warm and caring family.
     </p>
     <!-- void tags have no closing tag -->

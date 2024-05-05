@@ -39,17 +39,31 @@
                     grid-template-columns: 1fr; /* Stack the profiles in one column on small screens */
                 }
             }
+            .skip {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 8px;
+            text-decoration: wavy;
+            border: 2px solid #ffa500;
+            position: absolute;
+            top: 10px;
+            left: -999px; /* push off left side of browser */
+        }
+        .skip:focus {
+            left: 10px;
+        }
     </style>
 </head>
 <body>
     <nav>
+        <a href="#skip" class="skip" tabindex="1">Skip to Content</a><br>
         <a href="zp5home.html">Home</a> <span class="pipe">|</span>
         <a href="zp5board.html">Board</a> <span class="pipe">|</span>
         <a href="zp5event.html">Events</a>
     </nav>
     <br>
     <h1>Previous Events</h1>
-    <main>
+    <main id="skip">
         <section class="profile">
             <h2>Sino-American Symposium on Academic, Economic, and Cultural</h2>
             <img src="../ProjectImages/sino.png" alt="Sino-American Symposium on Academic, Economic, and Cultural" class="portrait">
